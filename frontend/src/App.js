@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Layout from './pages/layout/Layout.js'
 import Home from './pages/home/Home.js'
+import About from './pages/about/About.js'
+import Projects from './pages/projects/Projects.js'
+import Resume from './pages/resume/Resume.js'
+import Contact from './pages/contact/Contact.js'
 import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements} from 'react-router-dom'
 
 const router = createBrowserRouter(
