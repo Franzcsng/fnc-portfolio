@@ -78,84 +78,11 @@
             }
         }
 
-        .projects-container{
-            margin: auto;
-            width: 100%;
-            max-width: 1440px;
-            display: flex;
-            scroll-snap-type: x mandatory;
-            overflow-x: auto;
-            justify-content: center;
-            box-sizing: border-box;
-            background-clip: content-box; 
-
-            .project-card{
-                margin: auto;
-                background-color: var(--secondary-color);
-                flex: 0 0 clamp(290px, 23%, 400px);
-                height: 400px;
-                display: flex;
-                flex-direction: column;
-                scroll-snap-align: start;
-                border-radius: 15px;
-                margin: 8px;
-                overflow: hidden;
-                transition: all 0.3s ease-in-out;
-
-                img{
-                    width: 100%;
-                    height: 50%;
-                    margin-bottom: 20px;
-                }
-
-                p{
-                    color: var(--accent-color);
-                    margin-inline: 10%;
-                    margin-top: 0;
-                    margin-bottom: 5px;
-                }
-
-                button{
-                    width: 50%;
-                    font-size: 1rem;
-                    padding: 5px;
-                    margin-top: auto;
-                    margin-bottom: 20px;
-                    margin-inline: auto;
-
-                }
-                
-                &:hover{
-                    transform: scale(1.02);
-                }
-            }
-
-            &::-webkit-scrollbar {
-                height: 5px;   
-            }
-
-            &::-webkit-scrollbar-track {
-                background: var(--primary-color);     
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background: var(--accent-color);       /* scrollbar color */
-                border-radius: 10px;
-            }
-
-        }
-
         @media screen and (max-width: 1400px) {
             padding: 0;
 
             .projects-header{
                 padding-inline: clamp(20px, 10%, 80px);
-            }
-
-            .projects-container{
-                scroll-padding: 0 30px; 
-                padding: 0 30px 10px 30px;
-                justify-content: flex-start;
             }
         }
     }
