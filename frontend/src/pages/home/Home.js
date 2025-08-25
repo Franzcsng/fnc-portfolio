@@ -1,6 +1,8 @@
 import './Home.scss'
 import Banner from './banner/Banner.js'
-import {FaHtml5, FaCss3Alt, FaSquareJs, FaReact, FaNodeJs, FaPhp, FaFlutter } from 'react-icons/fa6'
+import SkillList from './SkillList.js'
+import Button from './../../components/common/button/Button.js'
+
 
 const Home = () =>{
     return (
@@ -15,46 +17,75 @@ const Home = () =>{
                     <h2>MY SKILLS</h2>
                     <hr></hr>
                 </div>
+
+                 <SkillList/>
                 
-                <div className='skills-container'>
-                    
-                    <div className='skill-icon'>
-                        <FaHtml5 className='icon'/>
-                        <p>HTML</p>
-                    </div>
+            </div>
 
-                    <div className='skill-icon'>
-                        <FaCss3Alt className='icon'/>
-                        <p>CSS</p>
-                    </div>
+            <div className='projects-section'>
 
-                    <div className='skill-icon'>
-                        <FaSquareJs className='icon'/>
-                        <p>JAVASCRIPT</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaReact className='icon'/>
-                        <p>REACT.JS</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaNodeJs className='icon'/>
-                        <p>NODE.JS</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaPhp className='icon'/>
-                        <p>PHP</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaFlutter className='icon'/>
-                        <p>FLUTTER</p>
-                    </div>
-
+                <div className='projects-header'>
+                    <h2>MY RECENT PROJECTS</h2>
+                    <Button
+                    text='view more'
+                    link='/projects'
+                    />
                 </div>
                 
+                <div className='projects-container'>
+
+                   <div className='project-card'>
+                        <img src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        
+                        <p>PROJECT 1</p>
+                        <p>LEVEL: Begginer</p>
+                        
+
+                        <button>
+                            view
+                        </button>
+                   </div>
+
+                   <div className='project-card'>
+                        <img src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        
+                        <p>PROJECT 1</p>
+                        <p>LEVEL: Begginer</p>
+                        
+
+                        <button>
+                            view
+                        </button>
+                   </div>
+
+                   <div className='project-card'>
+                        <img src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        
+                        <p>PROJECT 1</p>
+                        <p>LEVEL: Begginer</p>
+                        
+
+                        <button>
+                            view
+                        </button>
+                   </div>
+
+                   <div className='project-card'>
+                        <img src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        
+                        <p>PROJECT 1</p>
+                        <p>LEVEL: Begginer</p>
+                        
+
+                        <button>
+                            view
+                        </button>
+                   </div>
+
+                   
+
+                </div>
+            
             </div>
         </div>
     )
