@@ -6,7 +6,8 @@ import {
     FaReact, 
     FaNodeJs, 
     FaPhp, 
-    FaFlutter 
+    FaFlutter,
+    FaGitAlt  
 } from 'react-icons/fa6'
 
 
@@ -47,6 +48,11 @@ const SkillList = () => {
                     <div className='skill-icon'>
                         <FaFlutter className='icon'/>
                         <p>FLUTTER</p>
+                    </div>
+
+                    <div className='skill-icon'>
+                        <FaGitAlt className='icon'/>
+                        <p>GIT</p>
                     </div>
 
                 </div>

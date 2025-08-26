@@ -12,14 +12,27 @@
             opacity: 0.3;
             width: 80%;
             height: 80%;
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             border-radius: 50%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             box-shadow: 0 0 10px var(--secondary-color);
-            box-shadow: 0 0 15px var(--primary-color);
+            
+            overflow: hidden;
         }
+
+        img{
+                position: absolute;
+                opacity: 1;
+                width: 80%;
+                height: 80%;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
 
         .box-item{
             width: 100%;
@@ -29,11 +42,11 @@
             margin: auto;
 
             &.odd{
-                animation: box-glow 5s ease-in-out infinite;
+                animation: box-glow 2s ease-in-out infinite;
             }
 
             &.even{
-                animation: box-glow 6s ease-in-out infinite;
+                animation: box-glow 3s ease-in-out infinite;
             }
 
             @keyframes box-glow{
@@ -42,8 +55,8 @@
                     height: 100%;
                 }
                 50%{ 
-                    width: 80%;
-                    height: 80%;
+                    width: 70%;
+                    height: 70%;
                 }
                 100%{ 
                     width: 100%;

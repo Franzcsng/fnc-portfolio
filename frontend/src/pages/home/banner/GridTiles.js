@@ -1,5 +1,5 @@
 import './GridTiles.scss'
-
+import displayImage from '../../../assets/images/display_img.png'
 
 const GridTiles = () => {
 
@@ -17,7 +17,11 @@ const GridTiles = () => {
         <div className='grid-tiles-main'>
             {generateTiles()}
 
-            <div className='image-container'></div>
+            <div className='image-container'>
+                
+            </div>
+
+            <img src={displayImage} ></img>
         </div>
     )
 }

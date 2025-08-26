@@ -9,8 +9,8 @@ const Banner = () => {
         <div className='banner-main'>
             
             <div className='banner-content'>
-                <h1>HELLO, I AM <span>FRANCIS NORMAN A. CAUSING</span></h1>
-                <p>An aspiring full-stack developer from the Philippines!</p>
+                <h1>HELLO, I'M <span>FRANCIS</span></h1>
+                <p>An Information Technology Graduate with a passion in tech, particularly in web-development, and an aspiringfull-stack developer from the Philippines!</p>
                 <div className='btn-container'>
                     <Button
                         text='Contact me'
