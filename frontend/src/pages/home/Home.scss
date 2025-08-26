@@ -86,5 +86,84 @@
             }
         }
     }
+
+
+    .about-section{
+        width: 100%;
+        padding-inline: clamp(20px, 10%, 80px);
+        padding-top: 10px;
+        padding-bottom: 35px;
+        min-height: 100px;
+        max-height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .about-header{
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+                text-align: center;
+                font-weight: 400;
+                margin-inline: 20px;
+                color: var(--accent-color);
+                font-size: clamp(28px, 2.4vw, 40px);
+            }
+
+            hr{
+                flex: 1;
+                height: 1px;
+                background-color: var(--accent-color);
+                border: 1px solid var(--accent-color);
+            }
+        }
+        .about-container{
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            color: var(--accent-color);
+            font-size: clamp(20px, 1.8vw, 33px);
+
+            .grid-child{
+                padding: 15px;
+                width: 100%;
+                padding-inline: 5%;
+                max-height: 700px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                p{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+            .images{
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    
+
+                    img{
+                        height: 90%;
+                        object-fit: cover;
+                        box-shadow: 0 0 5px var(--secondary-color);
+                        border-radius: 10px;
+                    }
+            }
+
+            @media screen and (max-width: 780px){
+                flex-wrap: wrap;
+                text-align: center;
+            }
+        }
+    }
 }
     
