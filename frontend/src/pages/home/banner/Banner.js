@@ -1,6 +1,7 @@
 import './Banner.scss'
 import GridTiles from './GridTiles.js'
 import Button from './../../../components/common/button/Button.js'
+import displayImage from '../../../assets/images/display_img.png'
 
 const Banner = () => {
 
@@ -23,7 +24,7 @@ const Banner = () => {
                     />
                 </div>
             </div>
-            <GridTiles/>
+            <GridTiles displayImage={displayImage}/>
 
             
         </div>

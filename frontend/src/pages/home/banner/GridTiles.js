@@ -1,7 +1,6 @@
 import './GridTiles.scss'
-import displayImage from '../../../assets/images/display_img.png'
 
-const GridTiles = () => {
+const GridTiles = (props) => {
 
     const generateTiles = () => {
         let boxes = []
@@ -17,11 +16,18 @@ const GridTiles = () => {
         <div className='grid-tiles-main'>
             {generateTiles()}
 
+        {props.displayImage && (
+            <>
             <div className='image-container'>
                 
             </div>
 
-            <img src={displayImage} ></img>
+            <img src={props.displayImage} ></img>
+            </>
+        )
+        
+        }
+            
         </div>
     )
 }
