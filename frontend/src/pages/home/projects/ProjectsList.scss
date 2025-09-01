@@ -8,19 +8,21 @@
     justify-content: center;
     box-sizing: border-box;
     background-clip: content-box; 
+    gap: 25px;
 
     .project-card{
         margin: auto;
         background-color: var(--secondary-color);
-        flex: 0 0 clamp(290px, 23%, 400px);
-        height: 400px;
+        flex: 0 0 clamp(330px, 29%, 400px);
+        height: 500px;
         display: flex;
         flex-direction: column;
         scroll-snap-align: start;
         border-radius: 15px;
-        margin: 8px;
         overflow: hidden;
+        margin: 5px;
         transition: all 0.3s ease-in-out;
+        border: 1px solid var(--accent-color);
         box-shadow: 0 0 2px var(--secondary-color);
 
         img{
@@ -37,11 +39,11 @@
             margin-inline: 7%;
             margin-top: 0;
             margin-bottom: 5px;
-            font-size: 1rem;
+            font-size: 1.3rem;
 
             span{
                 border: 1px solid var(--accent-color);
-                font-size: 0.8rem; padding: 3px;
+                font-size: 1rem; padding: 3px;
                 align-self: center;
                 margin-left: 10px;
                 border-radius: 5px;
@@ -56,7 +58,7 @@
             overflow: hidden;
             margin-top: 5px;
             margin-bottom: 8px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             text-align: justify;
             font-weight: 200;
             -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
@@ -95,8 +97,14 @@
         
         scroll-padding: 0 30px; 
         padding: 0 30px 10px 30px;
-        justify-content: flex-start;
+        
     }
+
+     @media screen and (max-width: 1150px) {
+        justify-content: flex-start;
+     }
+
+
 
 
 }

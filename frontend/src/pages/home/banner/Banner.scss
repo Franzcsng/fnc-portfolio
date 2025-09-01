@@ -1,8 +1,9 @@
 .banner-main{   
+    border: 2px solid red;
     width: 100%;
     max-width: 1440px;
-    height: 70vh;
-    max-height: 800px;
+    min-height: 70vh;
+    max-height: fit-content;
     margin: auto;
     display: flex;
     align-items: center;

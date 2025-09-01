@@ -1,4 +1,5 @@
 import './SkillList.scss'
+import TechIcon from '../../components/common/tech-icon/TechIcon.js'
 import {
     FaHtml5, 
     FaCss3Alt, 
@@ -12,48 +13,51 @@ import {
 
 
 const SkillList = () => {
+
+    const iconSize = 'clamp(60px, 5.5vw, 90px)'
     return (
          <div className='skills-container'>
-                    
-                    <div className='skill-icon'>
-                        <FaHtml5 className='icon'/>
-                        <p>HTML</p>
-                    </div>
 
-                    <div className='skill-icon'>
-                        <FaCss3Alt className='icon'/>
-                        <p>CSS</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaSquareJs className='icon'/>
-                        <p>JAVASCRIPT</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaReact className='icon'/>
-                        <p>REACT.JS</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaNodeJs className='icon'/>
-                        <p>NODE.JS</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaPhp className='icon'/>
-                        <p>PHP</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaFlutter className='icon'/>
-                        <p>FLUTTER</p>
-                    </div>
-
-                    <div className='skill-icon'>
-                        <FaGitAlt className='icon'/>
-                        <p>GIT</p>
-                    </div>
+            <TechIcon
+                icon={FaHtml5}
+                label='HTML'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaCss3Alt}
+                label='CSS'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaSquareJs}
+                label='JAVASCRIPT'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaReact}
+                label='REACT.JS'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaNodeJs}
+                label='NODE.JS'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaPhp}
+                label='PHP'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaFlutter}
+                label='FLUTTER'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={FaGitAlt}
+                label='GIT'
+                size={iconSize}
+            />
 
                 </div>
     )
