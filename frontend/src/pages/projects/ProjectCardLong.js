@@ -8,7 +8,7 @@ import { IoLink } from "react-icons/io5";
 
 const ProjectCardLong = ({image, title, description, level, repo, live, techs}) => {
 
-    const iconSize = 'clamp(35px, 3.1vw, 45px)'
+    const iconSize = 'clamp(25px, 3.1vw, 45px)'
 
     return(
         <div className='project-container'>
@@ -26,20 +26,20 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
                         <p className='desc'>{description}</p>
                     </div>
 
-                        <div className='info-child skills'>
-                        <p> TECH USED </p>
-                        <div className='icons-container'>
+                    <div className='info-child skills'>
+                    <p> TECH USED </p>
+                    <div className='icons-container'>
 
-                            {techs.map((tech, index) => {
-                                return(
-                                    <TechIcon 
-                                        icon={tech.icon}
-                                        size={iconSize}
-                                    />
-                                )
-                            })}
-                    
-                        </div>
+                        {techs.map((tech, index) => {
+                            return(
+                                <TechIcon 
+                                    icon={tech.icon}
+                                    size={iconSize}
+                                />
+                            )
+                        })}
+                
+                    </div>
                         
                         
                     </div>
