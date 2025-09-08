@@ -1,5 +1,5 @@
 import './Projects.scss'
-import GridTiles from '../home/banner/GridTiles.js'
+import GridTiles from './../../components/common/grid-tiles/GridTiles.js'
 import ProjectCardLong from './ProjectCardLong.js'
 
 import {
@@ -17,7 +17,7 @@ const Projects = () => {
     return(
         <div className="projects-main">
 
-            <div className='projects-banner'>
+            <div className='projects-banner'got >
 
                 <div className='grid-container'>
                     <GridTiles/>
@@ -44,10 +44,8 @@ const Projects = () => {
                         {icon: FaCss3Alt},
                         {icon: FaHtml5},
                         {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
+                        
+                        
                     ]}
                 />
 
