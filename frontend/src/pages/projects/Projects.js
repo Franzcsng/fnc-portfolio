@@ -17,7 +17,7 @@ const Projects = () => {
     return(
         <div className="projects-main">
 
-            <div className='projects-banner'got >
+            <div className='projects-banner'>
 
                 <div className='grid-container'>
                     <GridTiles/>
