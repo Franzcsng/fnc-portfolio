@@ -1,0 +1,22 @@
+.about-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+    .journey-section{
+        width: 100%;
+        min-height: 200px;
+        background-color: var(--accent-color);
+        height: auto;
+        padding-inline: clamp(20px, 10%, 80px);
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .about-section{
+        padding-inline: clamp(20px, 10%, 80px);
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+}
