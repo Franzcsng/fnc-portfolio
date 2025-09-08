@@ -1,5 +1,5 @@
 import './Banner.scss'
-import GridTiles from './GridTiles.js'
+import GridTiles from '../../../components/common/grid-tiles/GridTiles.js'
 import Button from './../../../components/common/button/Button.js'
 import displayImage from '../../../assets/images/display_img.png'
 
