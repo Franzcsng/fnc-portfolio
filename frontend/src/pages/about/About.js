@@ -1,5 +1,6 @@
 import './About.scss'
 import Banner from './banner/Banner.js'
+import Journey from './Journey.js'
 
 const About = () => {
     return (
@@ -9,7 +10,35 @@ const About = () => {
 
             <div className='journey-section'>
 
-                <h2>MY JOURNEY</h2>
+                <div className='section-header'>
+                    <hr></hr>
+                    <h2>MY JOURNEY</h2>
+                    <hr></hr>
+                </div>
+
+                <div className='journey-list'>
+                    <Journey
+                        journey='THE BEGINNING'
+                    />
+
+                    <Journey
+                        journey='LEARNING'
+                    />
+
+                    <Journey
+                        journey='EXPERIENCE'
+                    />
+
+                    <Journey
+                        journey='PASSION'
+                    />
+
+                    <Journey
+                        journey="WHAT'S NEXT"
+                    />
+
+                </div>
+               
 
 
             </div>
