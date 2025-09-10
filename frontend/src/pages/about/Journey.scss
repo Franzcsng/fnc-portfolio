@@ -1,0 +1,16 @@
+.journey-item{
+    display: flex;
+    min-width: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: var(--background-color);
+
+    p{
+        margin: auto;
+        color: var(--accent-color);
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
