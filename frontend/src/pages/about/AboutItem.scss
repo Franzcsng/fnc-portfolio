@@ -1,0 +1,69 @@
+.about-grid{
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+
+    .about-content{
+        
+        hr{
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-color);
+            border: var(--accent-color);
+            margin: 20px auto 30px auto;
+        }
+        
+        p{
+            color: var(--accent-color);
+            &.head{
+                margin: auto;
+                font-size: 2rem;
+            }
+
+            &.body{
+                text-align: justify;
+                margin: auto;
+                font-size: 1.3rem;
+            }
+        }
+        
+        .about-card{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            opacity: 0.7;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            padding: 20px 30px 30px 30px;
+            box-sizing: border-box;
+            gap: 20px;
+
+            .about-info{
+                width: 40%;
+                text-align: left;
+
+                .date{
+                font-size: 2.5vw;
+                margin: 0 auto 10px auto;
+                font-weight: 500;
+                }
+                
+                .location{
+                font-size: 1.5vw;
+                margin: 0 auto 10px auto;
+                }
+
+            }
+            
+        }
+    }
+
+    .reverse{
+        order: -1;
+    }
+}
