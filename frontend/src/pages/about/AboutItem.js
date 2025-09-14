@@ -28,13 +28,15 @@ const AboutItem = (props) => {
                     />
 
                     <div className='about-info'>
-                        <p className='date'> 
-                            2002-2010
+                        
+                        <p className='year'> 
+                            {props.year}
                         </p>
 
-                        <p className='location'>
-                            Inside the red gate under the santol tree
+                        <p className='text'>
+                            {props.text}
                         </p>
+
                     </div>
                     
                 </div>
