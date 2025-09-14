@@ -1,9 +1,13 @@
-import './Contact.js'
+import './Contact.scss'
 
 const Contact = () => {
     return (
-        <div>
+        <div className='contact-main'>
+            <div className='contact-section'>
 
+
+
+            </div>
         </div>
     )
 }
