@@ -69,17 +69,24 @@ const About = () => {
     const returnSections = (sections) => {
         return sections.map((section, index) => {
         const isReverse = index % 2 !== 0 ? "reverse" : "";
+        const alternate = index % 2 !== 0 ? "rev" : "";
                  
         return (
-            <AboutItem
-                key={index}
-                section={section.section}
-                description={section.description}
-                icon={section.icon}
-                year={section.year}
-                text={section.text}
-                reverse={isReverse}
-            />
+            <>
+                <AboutItem
+                    key={index}
+                    section={section.section}
+                    description={section.description}
+                    icon={section.icon}
+                    year={section.year}
+                    text={section.text}
+                    reverse={isReverse}
+                    rev={alternate}
+                />
+
+                <hr></hr>
+            </>
+
         )
     })
     }

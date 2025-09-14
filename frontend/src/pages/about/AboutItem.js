@@ -27,7 +27,7 @@ const AboutItem = (props) => {
                         size='clamp(120px, 18vw, 250px)'
                     />
 
-                    <div className='about-info'>
+                    <div className={`about-info ${props.rev}`}>
 
                         <p className='year'> 
                             {props.year}
