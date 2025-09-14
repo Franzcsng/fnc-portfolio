@@ -5,6 +5,7 @@
     display: flex;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
+    overflow-y: hidden;
     justify-content: center;
     box-sizing: border-box;
     background-clip: content-box; 
