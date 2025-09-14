@@ -16,12 +16,45 @@ const About = () => {
 
     let aboutSections = [
         {
-            section: "THE BEGINNING",
-            description: "",
+            section: journeys[0],
+            description: "My journey has been a continuous story of growth and discovery. It began with humble beginnings that shaped my character and values. As I moved into the stage of learning, I embraced knowledge and built the foundations that would guide me forward. Experience taught me resilience, adaptability, and the importance of turning challenges into opportunities. Through these moments, I discovered my passion—an inner drive that fuels my creativity and purpose. Now, as I look toward what’s next, I carry with me the lessons of the past and the excitement of new opportunities waiting ahead",
             icon: HiAcademicCap,
-            year: "2002=2010",
+            year: "2002-2010",
             text: "Behind the Red Gate Under the Santol Tree"
         },
+
+        {
+            section: journeys[1],
+            description: "My journey has been a continuous story of growth and discovery. It began with humble beginnings that shaped my character and values. As I moved into the stage of learning, I embraced knowledge and built the foundations that would guide me forward. Experience taught me resilience, adaptability, and the importance of turning challenges into opportunities. Through these moments, I discovered my passion—an inner drive that fuels my creativity and purpose. Now, as I look toward what’s next, I carry with me the lessons of the past and the excitement of new opportunities waiting ahead",
+            icon: HiAcademicCap,
+            year: "2002-2010",
+            text: "Behind the Red Gate Under the Santol Tree"
+        },
+
+        {
+            section: journeys[2],
+            description: "My journey has been a continuous story of growth and discovery. It began with humble beginnings that shaped my character and values. As I moved into the stage of learning, I embraced knowledge and built the foundations that would guide me forward. Experience taught me resilience, adaptability, and the importance of turning challenges into opportunities. Through these moments, I discovered my passion—an inner drive that fuels my creativity and purpose. Now, as I look toward what’s next, I carry with me the lessons of the past and the excitement of new opportunities waiting ahead",
+            icon: HiAcademicCap,
+            year: "2002-2010",
+            text: "Behind the Red Gate Under the Santol Tree"
+        },
+
+        {
+            section: journeys[3],
+            description: "My journey has been a continuous story of growth and discovery. It began with humble beginnings that shaped my character and values. As I moved into the stage of learning, I embraced knowledge and built the foundations that would guide me forward. Experience taught me resilience, adaptability, and the importance of turning challenges into opportunities. Through these moments, I discovered my passion—an inner drive that fuels my creativity and purpose. Now, as I look toward what’s next, I carry with me the lessons of the past and the excitement of new opportunities waiting ahead",
+            icon: HiAcademicCap,
+            year: "2002-2010",
+            text: "Behind the Red Gate Under the Santol Tree"
+        },
+
+        {
+            section: journeys[4],
+            description: "My journey has been a continuous story of growth and discovery. It began with humble beginnings that shaped my character and values. As I moved into the stage of learning, I embraced knowledge and built the foundations that would guide me forward. Experience taught me resilience, adaptability, and the importance of turning challenges into opportunities. Through these moments, I discovered my passion—an inner drive that fuels my creativity and purpose. Now, as I look toward what’s next, I carry with me the lessons of the past and the excitement of new opportunities waiting ahead",
+            icon: HiAcademicCap,
+            year: "2002-2010",
+            text: "Behind the Red Gate Under the Santol Tree"
+        },
+
     ]
 
     const returnJourneys = (journeys) => {
@@ -34,7 +67,10 @@ const About = () => {
     }
      
     const returnSections = (sections) => {
-        return sections.map((section, index) => (
+        return sections.map((section, index) => {
+        const isReverse = index % 2 !== 0 ? "reverse" : "";
+                 
+        return (
             <AboutItem
                 key={index}
                 section={section.section}
@@ -42,8 +78,10 @@ const About = () => {
                 icon={section.icon}
                 year={section.year}
                 text={section.text}
+                reverse={isReverse}
             />
-        ))
+        )
+    })
     }
 
     return (

@@ -19,16 +19,16 @@ const AboutItem = (props) => {
 
             </div>
 
-            <div className='about-content second'>
+            <div className={`about-content second ${props.reverse}`}>
                 <div className='about-card'>
                     
                     <TechIcon
                         icon={props.icon}
-                        size='250px '
+                        size='clamp(120px, 18vw, 250px)'
                     />
 
                     <div className='about-info'>
-                        
+
                         <p className='year'> 
                             {props.year}
                         </p>

@@ -4,10 +4,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
     gap: 5%;
 
     .about-content{
-        
         hr{
             width: 100%;
             height: 2px;
@@ -18,15 +18,16 @@
         
         p{
             color: var(--accent-color);
+            
             &.head{
                 margin: auto;
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 2.7vw, 2rem);
             }
 
             &.body{
                 text-align: justify;
                 margin: auto;
-                font-size: 1.3rem;
+                font-size: clamp(1rem, 1.5vw, 1.3rem);
             }
         }
         
@@ -39,7 +40,6 @@
             margin: auto;
             width: 100%;
             height: 100%;
-            padding: 20px 30px 30px 30px;
             box-sizing: border-box;
             gap: 20px;
 
@@ -48,13 +48,13 @@
                 text-align: left;
 
                 .year{
-                font-size: 2.5vw;
+                font-size: clamp(1.5rem, 2.5vw, 2.5rem);
                 margin: 0 auto 10px auto;
                 font-weight: 500;
                 }
                 
                 .text{
-                font-size: 1.5vw;
+                font-size: clamp(1rem, 1.5vw, 1.5rem);
                 margin: 0 auto 10px auto;
                 }
 
@@ -65,5 +65,15 @@
 
     .reverse{
         order: -1;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+
+        .reverse{
+            order: 1;
+        }
     }
 }
