@@ -5,7 +5,7 @@ const Button = ({width, bgGolor, hoverColor, borderColor, text, link}) => {
     return(
         
         <NavLink to={link}>
-            <button>
+            <button className='button-common'>
                 {text}
             </button>
         </NavLink>
