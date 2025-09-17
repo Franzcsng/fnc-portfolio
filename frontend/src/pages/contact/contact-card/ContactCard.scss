@@ -1,0 +1,52 @@
+.contact-card{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    min-width: 230px;
+    border-radius: 20px;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    .text{
+        
+        p{
+            color: var(--accent-color);
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0px;
+            margin-inline: auto;
+        }
+
+        .card-title{
+            font-size: clamp(0.5rem, 1vw, 1rem);
+            font-weight: 700;
+        }
+
+        .address{
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-inline: auto;
+            font-size: clamp(0.7rem, 1vw, 1rem);
+        }
+    }
+
+     @media screen and (max-width: 510px){
+            justify-content: left;
+            min-width: 120px;
+            
+            .text{
+
+                .card-title{
+                    width: 100%;
+                }
+                .address{
+                    display: none;
+                    
+                }
+            }
+        }
+    
+}
