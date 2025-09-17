@@ -73,6 +73,18 @@
             margin-top: auto;
             margin-bottom: 20px;
             margin-inline: auto;
+            border: 2px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                background-color: var(--accent-color);
+                color: var(--background-color);
+            
+            }
 
         }
         
