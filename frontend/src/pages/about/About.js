@@ -4,6 +4,7 @@ import Journey from './Journey.js'
 import AboutItem from './AboutItem.js'
 import { HiAcademicCap } from "react-icons/hi2";
 
+
 const About = () => {
 
     let journeys = [

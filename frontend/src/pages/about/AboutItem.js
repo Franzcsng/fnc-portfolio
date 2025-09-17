@@ -1,6 +1,7 @@
 import './AboutItem.scss'
 import TechIcon from '../../components/common/tech-icon/TechIcon.js'
 
+
 const AboutItem = (props) => {
     return(
         <div className='about-grid'>
