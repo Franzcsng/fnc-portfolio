@@ -19,7 +19,7 @@ const Resume = () =>{
 
                     <div className='profile-container'>
                         <div className='image-container'>
-                            <img alt="Profile Image" src={displayImage}></img>
+                            <img alt="Profile" src={displayImage}></img>
                         </div>
 
                         <div className='details'>

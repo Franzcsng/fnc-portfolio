@@ -13,7 +13,7 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
         <div className='project-container'>
 
             <div  className='project-img'>
-                <img alt='Project Image' src={image}></img>
+                <img alt='Project' src={image}></img>
             </div>
             
 
