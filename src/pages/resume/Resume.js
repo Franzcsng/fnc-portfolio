@@ -1,6 +1,5 @@
 import './Resume.scss'
 import displayImage from '../../assets/images/display_img.png'
-import Button from '../../components/common/button/Button'
 import { icons } from '../../components/icons'
 
 const LinkedinIcon = icons.linkedin
@@ -35,9 +34,7 @@ const Resume = () =>{
                     </div>
 
                     <div className='button-container'>
-                        <Button
-                            text='DOWNLOAD PDF'
-                        />
+                        <a href='/Causing_Resume.pdf' target="_blank" rel="noopener noreferrer">DOWNLOAD PDF </a>
 
                     </div>
                 </div>
