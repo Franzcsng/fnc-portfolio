@@ -20,7 +20,7 @@ const AboutItem = (props) => {
 
             </div>
 
-            <div className={`about-content second ${props.reverse}`}>
+            <div className={`about-content`}>
                 <div className='about-card'>
                     
                     <TechIcon

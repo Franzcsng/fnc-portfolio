@@ -3,6 +3,7 @@ import Banner from './banner/Banner.js'
 import SkillList from './SkillList.js'
 import Button from './../../components/common/button/Button.js'
 import ProjectsList from './projects/ProjectsList.js'
+import ContactForm from '../contact/contact-form/ContactForm.js'
 
 
 const Home = () =>{
@@ -57,6 +58,18 @@ const Home = () =>{
                     
 
                 </div>
+            </div>
+
+            <div className='contact-section'>
+
+                <div className='contact-header'>
+                    <hr></hr>
+                    <h2>LET'S GET IN TOUCH</h2>
+                    <hr></hr>
+                </div>
+                
+                <ContactForm/>
+                
             </div>
 
 

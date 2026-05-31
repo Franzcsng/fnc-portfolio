@@ -21,7 +21,7 @@ const Header = ({toggleMode, mode}) => {
                         <div className='line'></div>
                     </div>
 
-                    <div className='logo'></div>    
+                    {/* <div className='logo'></div>     */}
                     <nav className='main-nav'>
                         <ul>
                             <li><NavLink to='/'>home</NavLink></li>

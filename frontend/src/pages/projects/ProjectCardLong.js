@@ -1,5 +1,5 @@
 import './ProjectCardLong.scss'
-import TechIcon from '../../components/common/tech-icon/TechIcon.js'
+import ProjectTechIcon from './ProjectTechIcon.js'
 import {NavLink} from 'react-router-dom'
 import { FaGithubAlt } from "react-icons/fa6";
 import { IoLink } from "react-icons/io5";
@@ -12,11 +12,43 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
 
     return(
         <div className='project-container'>
-            <div className='grid-child img'>
-                    <img src={image}></img>
+
+            <div  className='project-img'>
+                <img src={image}></img>
+            </div>
+            
+
+            <div className='project-info'>
+                <p className='project-title'>{title}</p>
+                <div className='description-container'>
+                    <p className='description'>{description}</p>
+                </div>
+                
+                <div className='button-container'>
+                    <a>Learn more</a>
+                    <a><FaGithubAlt className='icon'/></a>
+                    <a><IoLink className='icon'/></a>
+
+                </div>
             </div>
 
-            <div className='grid-child'>
+            <div className='project-tech'>
+                <p className='tech-used'>
+                    TECH STACK
+                </p>
+                <div className='tech-container'>
+                    {techs.map((tech, index) => {
+                        return(
+                            <ProjectTechIcon 
+                                icon={tech.icon}
+                                size={iconSize}
+                                label={tech.label}
+                            />
+                        )
+                    })}
+                </div>
+            </div>
+            {/* <div className='grid-child'>
 
                 <div className='info-grid'>
 
@@ -64,7 +96,7 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
                     </div>
                     
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

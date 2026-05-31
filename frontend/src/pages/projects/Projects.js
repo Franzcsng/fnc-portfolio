@@ -36,14 +36,14 @@ const Projects = () => {
                     image='https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24'
                     title='PROJECT 1'
                     level='BEGINNER'
-                    description='"A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
+                    description='A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams. A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
                     repo='#'
                     live='#'
                     techs={[
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
+                        {icon: FaHtml5, label: 'HTML'},
+                        {icon: FaCss3Alt, label: 'CSS'},
+                        {icon: FaHtml5, label: "HTML"},
+                        {icon: FaCss3Alt, label: 'CSS'},
                         
                         
                     ]}
@@ -53,7 +53,7 @@ const Projects = () => {
                     image='https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24'
                     title='PROJECT 1'
                     level='BEGINNER'
-                    description='"A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
+                    description='A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
                     repo='#'
                     live='#'
                     techs={[
