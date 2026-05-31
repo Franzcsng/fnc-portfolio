@@ -1,6 +1,5 @@
 import './ProjectCardLong.scss'
 import ProjectTechIcon from './ProjectTechIcon.js'
-import {NavLink} from 'react-router-dom'
 import { FaGithubAlt } from "react-icons/fa6";
 import { IoLink } from "react-icons/io5";
 
@@ -14,7 +13,7 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
         <div className='project-container'>
 
             <div  className='project-img'>
-                <img src={image}></img>
+                <img alt='Project Image' src={image}></img>
             </div>
             
 
@@ -25,9 +24,9 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
                 </div>
                 
                 <div className='button-container'>
-                    <a>Learn more</a>
-                    <a><FaGithubAlt className='icon'/></a>
-                    <a><IoLink className='icon'/></a>
+                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer">Learn more</a>
+                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>
+                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer"><IoLink className='icon'/></a>
 
                 </div>
             </div>
@@ -48,55 +47,6 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
                     })}
                 </div>
             </div>
-            {/* <div className='grid-child'>
-
-                <div className='info-grid'>
-
-                    <div className='info-child content'>
-                        <p className='title'>{title}</p>
-                        <p className='level'>LEVEL : <span>{level}</span></p>
-                        <p className='desc'>{description}</p>
-                    </div>
-
-                    <div className='info-child skills'>
-                    <p> TECH USED </p>
-                    <div className='icons-container'>
-
-                        {techs.map((tech, index) => {
-                            return(
-                                <TechIcon 
-                                    icon={tech.icon}
-                                    size={iconSize}
-                                />
-                            )
-                        })}
-                
-                    </div>
-                        
-                        
-                    </div>
-                </div>
-
-                <div className='bottom-section'>    
-
-                    <NavLink>
-                        Learn more
-                    </NavLink>
-
-                    <div className='button-wrapper'>
-                        <a href={repo}>
-                            <FaGithubAlt className='icon'/> 
-                            repo
-                        </a>
-
-                        <a href={live}>
-                            <IoLink className='icon'/>
-                            live
-                        </a>
-                    </div>
-                    
-                </div>
-            </div> */}
 
         </div>
     )
