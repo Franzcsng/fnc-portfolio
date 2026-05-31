@@ -5,12 +5,12 @@ import ProjectCardLong from './ProjectCardLong.js'
 import {
     FaHtml5, 
     FaCss3Alt, 
-    FaSquareJs, 
-    FaReact, 
-    FaNodeJs, 
-    FaPhp, 
-    FaFlutter,
-    FaGitAlt  
+    // FaSquareJs, 
+    // FaReact, 
+    // FaNodeJs, 
+    // FaPhp, 
+    // FaFlutter,
+    // FaGitAlt  
 } from 'react-icons/fa6'
 
 const Projects = () => {

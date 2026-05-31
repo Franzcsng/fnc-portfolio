@@ -1,11 +1,11 @@
 import './Banner.scss'
 import GridTiles from '../../../components/common/grid-tiles/GridTiles.js'
-import Button from './../../../components/common/button/Button.js'
+// import Button from './../../../components/common/button/Button.js'
 import displayImage from '../../../assets/images/display_img.png'
 import { NavLink } from 'react-router-dom'
 import { icons } from "../../../components/icons";
 
-const HtmlIcon = icons.html;
+// const HtmlIcon = icons.html;
 const GithubIcon = icons.github
 const LinkedinIcon = icons.linkedin
 

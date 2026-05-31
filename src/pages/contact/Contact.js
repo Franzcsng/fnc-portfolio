@@ -1,10 +1,7 @@
 import './Contact.scss'
-import TechIcon from '../../components/common/tech-icon/TechIcon.js'
 import ContactCard from './contact-card/ContactCard.js'
 import ContactForm from './contact-form/ContactForm.js'
 import { MdOutlineEmail } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-
 const Contact = () => {
 
     let contacts = [

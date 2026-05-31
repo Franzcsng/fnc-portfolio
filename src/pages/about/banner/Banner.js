@@ -3,7 +3,6 @@ import GridTiles from '../../../components/common/grid-tiles/GridTiles.js'
 import { NavLink } from 'react-router-dom'
 import { icons } from "../../../components/icons";
 
-const HtmlIcon = icons.html;
 const GithubIcon = icons.github
 const LinkedinIcon = icons.linkedin
 

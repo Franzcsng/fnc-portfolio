@@ -3,7 +3,6 @@ import Banner from './banner/Banner.js'
 import SkillList from './SkillList.js'
 import Button from './../../components/common/button/Button.js'
 import ProjectsList from './projects/ProjectsList.js'
-import ContactForm from '../contact/contact-form/ContactForm.js'
 import CtaSection from '../../components/common/cta-section/CtaSection.js'
 
 const Home = () =>{
@@ -58,7 +57,7 @@ const Home = () =>{
                     </div>
 
                     <div className='grid-child images'>
-                        <img src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        <img alt='about-image' src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
                     </div>
                     
 

@@ -1,8 +1,6 @@
 import './About.scss'
 import Banner from './banner/Banner.js'
 import Journey from './Journey.js'
-import { HiAcademicCap } from "react-icons/hi2";
-import TechIcon from '../../components/common/tech-icon/TechIcon.js'
 import CtaSection from '../../components/common/cta-section/CtaSection.js'
 
 const About = () => {

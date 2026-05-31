@@ -22,7 +22,7 @@ const GridTiles = (props) => {
                 
             </div>
 
-            <img src={props.displayImage} ></img>
+            <img alt='profile-image' src={props.displayImage} ></img>
             </>
         )
         
