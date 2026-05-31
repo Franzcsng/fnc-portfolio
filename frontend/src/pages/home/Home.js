@@ -4,7 +4,7 @@ import SkillList from './SkillList.js'
 import Button from './../../components/common/button/Button.js'
 import ProjectsList from './projects/ProjectsList.js'
 import ContactForm from '../contact/contact-form/ContactForm.js'
-
+import CtaSection from '../../components/common/cta-section/CtaSection.js'
 
 const Home = () =>{
     return (
@@ -48,7 +48,12 @@ const Home = () =>{
 
                 <div className='about-container'>
                     <div className='grid-child text'>
-                        <p>I am a passionate and driven individual with a strong interest in technology, leadership, and continuous growth. With experience in both academic and organizational settings, I enjoy taking on challenges that allow me to apply creativity, problem-solving, and collaboration. I thrive in environments where I can contribute innovative ideas, learn from others, and make a meaningful impact. Beyond my professional and academic pursuits, I value teamwork, adaptability, and a commitment to excellence in everything I do.
+                        <p>
+                            I am a web developer focused on building end-to-end software solutions that address real business needs. I work across frontend, backend, and system integrations such as CRMs, analytics platforms, and APIs to deliver practical and scalable applications.
+                                <br></br><br></br>
+                            I have experience in both academic and organizational environments, where I have developed strong problem-solving, collaboration, and leadership skills. I am comfortable working in dynamic settings that require adaptability, critical thinking, and attention to detail.
+                                <br></br><br></br>
+                            Currently, I am expanding my expertise in full-stack development while exploring AI-driven automation to enhance business processes and operational efficiency.
                         </p>
                     </div>
 
@@ -58,19 +63,17 @@ const Home = () =>{
                     
 
                 </div>
-            </div>
 
-            <div className='contact-section'>
-
-                <div className='contact-header'>
-                    <hr></hr>
-                    <h2>LET'S GET IN TOUCH</h2>
-                    <hr></hr>
+                <div className='button-container'>
+                    <Button
+                    text='Learn more about me'
+                    link='/about'
+                />
                 </div>
                 
-                <ContactForm/>
-                
             </div>
+
+        <CtaSection/>
 
 
         </div>

@@ -20,7 +20,7 @@
 
         p{
             font-size: clamp(16px, 1.5vw,18px);
-            color: var(--accent-color);
+            color: var(--text-color);
         }
         h1{
             font-size: clamp(1.8rem, 3vw, 45px);
@@ -32,6 +32,39 @@
         hr{
             border: 2px solid var(--accent-color);
         } 
+
+        .tags-banner, .links-banner{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            p{
+                padding: 5px 10px;
+                border-radius: 10px;
+                opacity: 0.5;
+                border: 1px solid var(--accent-color);
+                color: var(--accent-color);
+            }
+            
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 10px;
+                border: 1px solid var(--accent-color);
+                color: var(--accent-color);
+                transition: all 0.2s ease-in-out;
+                font-weight: 500;
+                
+                &:hover{
+                    background-color: var(--accent-color);
+                    color: var(--background-color);
+                }
+            }
+        }
     }
 
     @media screen and (max-width: 740px) {

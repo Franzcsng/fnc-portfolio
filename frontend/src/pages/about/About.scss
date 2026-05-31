@@ -66,6 +66,7 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
+        padding-bottom: 60px;
 
         hr{
             height: 1px;
@@ -99,22 +100,29 @@
             }
         }
 
+        .child-section{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            gap: 20px;
+         
+        }
         .about-content{
             display: flex;
             flex-direction: column;
             flex: 1;
             min-width: 250px;
             gap: 20px;
+
+            &.education-content{
+                flex: 1;
+                height: fit-content;
+            }
         }
 
-        .education-section{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            gap: 20px;
-
+        
             .education-container{
                 width: 100%;
                 flex: 1;
@@ -124,16 +132,20 @@
                 box-shadow: 0 0 5px rgb(184, 184, 184);
                 gap: 5px;
                 
-                p{
+                p{  
+                    display: flex;
+                    flex-direction: column;
                     color: var(--text-color);
                     line-height: 1.5;
                     span{
+                        margin-left: 5px;
                         font-weight: 600;
                         color: var(--accent-color);
                     }
                 }
 
                 .affiliations{
+                    margin-top: 4px;
                     text-align: center;
                     color: var(--accent-color);
                     font-weight: 600;
@@ -146,22 +158,16 @@
                     flex-direction: column;
                 }
             }
-        }
-
-        .experience-section{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            gap: 20px;
+        
 
             .experience-container{
-                padding-bottom: 10px;
+                padding: 15px;
+                border-radius: 8px;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                border-bottom: 1px solid var(--accent-color);
+                box-sizing: border-box;
+                box-shadow: 0 0 5px rgb(184, 184, 184);
                 color: var(--text-color);
 
                 .description {
@@ -172,11 +178,11 @@
                 }
 
                 .experience-item{
-                    text-transform: uppercase;
-                    margin: 0 0px;
-                   color: var(--accent-color);
-                   font-weight: 600;
-                   margin-bottom: 6px;
+                text-transform: uppercase;
+                margin: 0 0px;
+                color: var(--accent-color);
+                font-weight: 600;
+                margin-bottom: 6px;
                 }
 
                 .skills-tags{
@@ -194,7 +200,75 @@
                     }
                 }
             }
-        }
+
+            .passion-container{
+                padding: 15px;
+                border-radius: 8px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                color: var(--text-color);
+                .description {
+                    margin: 5px auto;
+                    text-align: center;
+                    font-size: clamp(1rem, 1.5vw, 1.2rem);  
+                }
+                .passion-item-container{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    justify-content: center;
+                
+                    .passion-item{
+                        padding: 6px 10px;
+                        border-radius: 5px;
+                        border: 1px solid var(--accent-color);
+                        color: var(--accent-color);
+                    }
+                }
+               
+            }
+
+            .learning-container{
+                padding: 15px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                color: var(--text-color);
+
+                 .quote{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin: 0 auto;
+                    font-weight: 600;
+                    color: var(--accent-color);
+                    font-style: italic;
+                    text-align: center;
+                    font-size: clamp(1.4rem, 1.5vw, 40px);
+                    
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-style: normal;
+                        padding: 5px 10px;
+                        color: rgba(159, 45, 0, 0.786);
+                    }
+                }
+                .description {
+                    margin: 5px auto;
+                    text-align: center;
+                    font-size: clamp(1rem, 1.5vw, 1.2rem);  
+                }
+            }
+
+            
+
+            #education, #experiencem, #passion, #learning{
+                scroll-margin-top: 100px;
+            }
         
 
         

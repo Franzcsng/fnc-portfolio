@@ -99,6 +99,14 @@
         box-sizing: border-box;
         overflow: hidden;
 
+        .button-container{
+            margin-top: 30px;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            justify-content: center;
+            margin-inline: auto;
+        }
         .about-header{
             width: 100%;
             max-width: 100%;
@@ -129,7 +137,7 @@
             justify-content: space-around;
             margin: auto;
             color: var(--accent-color);
-            font-size: clamp(20px, 1.8vw, 33px);
+            font-size: clamp(14px, 1.3vw, 20px);
 
             .grid-child{
                 padding: 15px;
@@ -143,6 +151,7 @@
                 p{
                     width: 100%;
                     margin: 0;
+                    line-height: 1.5;
                 }
             }
 
@@ -153,9 +162,10 @@
                     
 
                     img{
-                        height: 90%;
+                        width: 100%;
+                        aspect-ratio: 4/3;
                         object-fit: cover;
-                        box-shadow: 0 0 5px var(--secondary-color);
+                        box-shadow: 0 0 5px rgb(184, 184, 184);
                         border-radius: 10px;
                     }
             }

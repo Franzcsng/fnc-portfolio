@@ -6,11 +6,18 @@
     box-sizing: border-box;
     padding: 10px 15px;
     background-color: var(--background-color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        border: 2px solid var(--accent-color);
+    }
 
     p{
         margin: auto;
         color: var(--accent-color);
         font-size: 20px;
         font-weight: 600;
+        text-transform: uppercase;
     }
 }
