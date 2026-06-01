@@ -10,6 +10,10 @@ const NodeIcon = icons.node
 const PhpIcon = icons.php
 const FlutterIcon = icons.flutter
 const GitIcon = icons.git
+const NextIcon = icons.nextjs
+const SassIcon = icons.sass
+const TypescriptIcon = icons.typescript
+const MysqlIcon = icons.mysql
 
 
 const SkillList = () => {
@@ -56,6 +60,26 @@ const SkillList = () => {
             <TechIcon
                 icon={GitIcon}
                 label='GIT'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={TypescriptIcon}
+                label='TYPESCRIPT'
+                size={iconSize}
+            />
+             <TechIcon
+                icon={NextIcon}
+                label='NEXTJS'
+                size={iconSize}
+            />
+             <TechIcon
+                icon={MysqlIcon}
+                label='MYSQL'
+                size={iconSize}
+            />
+             <TechIcon
+                icon={SassIcon}
+                label='SASS'
                 size={iconSize}
             />
 
