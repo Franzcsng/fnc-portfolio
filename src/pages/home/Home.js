@@ -27,14 +27,16 @@ const Home = () =>{
 
                 <div className='projects-header'>
                     <h2>MY RECENT PROJECTS</h2>
-                    <Button
-                    text='view more'
-                    link='/projects'
-                    />
                 </div>
                 
                 <ProjectsList/>
                 
+                <div className='projects-button'>
+                     <Button
+                        text='view more'
+                        link='/projects'
+                    />    
+                </div>
             </div>
 
             <div className='about-section'>
