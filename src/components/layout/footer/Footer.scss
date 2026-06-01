@@ -30,11 +30,13 @@
                     text-decoration: none;
                     color: var(--primary-color);
                 }
-                
+
             h2{
                 font-size:clamp(1.8rem, 3vw, 50px);
                 margin-top: 0;
                 margin-bottom: 0px;
+                margin-inline: auto;
+                text-align: center;
             }
 
             p{
