@@ -2,7 +2,7 @@ import './Banner.scss'
 import GridTiles from '../../../components/common/grid-tiles/GridTiles.js'
 import { NavLink } from 'react-router-dom'
 import { icons } from "../../../components/icons";
-
+import displayImage from '../../../assets/images/siomai_francis.png'
 const GithubIcon = icons.github
 const LinkedinIcon = icons.linkedin
 
@@ -22,6 +22,7 @@ const Banner = () => {
                 <div className='tags-banner'>
                     <p>Full-stack Developer</p>
                     <p>Aspiring AI Automation Engineer</p>
+                    <p>Siomai Lover</p>
                 </div>
                 <div className='links-banner'>
                     <NavLink to='/contact'> Contact Me</NavLink>
@@ -32,7 +33,7 @@ const Banner = () => {
 
             </div>
 
-            <GridTiles/>
+            <GridTiles displayImage={displayImage}/>
             
             <div>
 
