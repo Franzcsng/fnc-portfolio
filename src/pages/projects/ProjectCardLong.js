@@ -2,10 +2,11 @@ import './ProjectCardLong.scss'
 import ProjectTechIcon from './ProjectTechIcon.js'
 import { FaGithubAlt } from "react-icons/fa6";
 import { IoLink } from "react-icons/io5";
+// import {Link} from 'react-router-dom'
 
 
 
-const ProjectCardLong = ({image, title, description, level, repo, live, techs}) => {
+const ProjectCardLong = ({image, title, description, slug,level, repo, live, techs}) => {
 
     const iconSize = 'clamp(25px, 3.1vw, 45px)'
 
@@ -24,9 +25,11 @@ const ProjectCardLong = ({image, title, description, level, repo, live, techs}) 
                 </div>
                 
                 <div className='button-container'>
-                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer">Learn more</a>
-                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>
-                    <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer"><IoLink className='icon'/></a>
+                    {/* <Link to={`/projects/${slug}`} target="_blank" rel="noopener noreferrer">Learn more</Link> */}
+                    <a href={repo} target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>
+                   {
+                    live && <a href={live} target="_blank" rel="noopener noreferrer"><IoLink className='icon'/></a>
+                   } 
 
                 </div>
             </div>

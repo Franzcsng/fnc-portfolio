@@ -11,7 +11,7 @@ const ProjectCard = ({img, title, level, desc}) => {
                 
                 <p className='project-desc'>{desc}</p>
 
-                <button> Learn more </button>
+                {/* <button> Learn more </button> */}
             </div>
             
         </div>

@@ -5,6 +5,7 @@ import About from './pages/about/About.js'
 import Projects from './pages/projects/Projects.js'
 import Resume from './pages/resume/Resume.js'
 import Contact from './pages/contact/Contact.js'
+import ProjectDetails from './pages/project-details/ProjectDetails.js'
 import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements} from 'react-router-dom'
 
 const router = createBrowserRouter(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/resume' element={<Resume/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/projects/:slug' element={<ProjectDetails/>}/>
     </Route>
   )
 )

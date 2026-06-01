@@ -1,17 +1,8 @@
 import './Projects.scss'
 import GridTiles from './../../components/common/grid-tiles/GridTiles.js'
 import ProjectCardLong from './ProjectCardLong.js'
+import {projects} from '../../assets/projects/projects.js'
 
-import {
-    FaHtml5, 
-    FaCss3Alt, 
-    // FaSquareJs, 
-    // FaReact, 
-    // FaNodeJs, 
-    // FaPhp, 
-    // FaFlutter,
-    // FaGitAlt  
-} from 'react-icons/fa6'
 
 const Projects = () => {
     return(
@@ -32,41 +23,22 @@ const Projects = () => {
 
             <div className='projects-section'>
 
-                <ProjectCardLong
-                    image='https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24'
-                    title='PROJECT 1'
-                    level='BEGINNER'
-                    description='A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams. A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
-                    repo='#'
-                    live='#'
-                    techs={[
-                        {icon: FaHtml5, label: 'HTML'},
-                        {icon: FaCss3Alt, label: 'CSS'},
-                        {icon: FaHtml5, label: "HTML"},
-                        {icon: FaCss3Alt, label: 'CSS'},
-                        
-                        
-                    ]}
-                />
-
-                <ProjectCardLong
-                    image='https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24'
-                    title='PROJECT 1'
-                    level='BEGINNER'
-                    description='A web-based productivity app that helps users organize tasks, set deadlines, and track progress in real-time. Built with React, Node.js, and MongoDB, it features intuitive drag-and-drop task boards, reminders, and collaborative tools for teams.'
-                    repo='#'
-                    live='#'
-                    techs={[
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                        {icon: FaHtml5},
-                        {icon: FaCss3Alt},
-                    ]}
-                />
+                {projects.map(p => (
+                    <ProjectCardLong
+                        image={p.featured_image}
+                        title={p.title}
+                        slug={p.slug}
+                        description={p.description}
+                        repo={p.github}
+                        live={p.live || undefined}
+                        techs={p.tech.map(t => (
+                            {
+                                icon: t.icon, 
+                                label: t.tech
+                            }
+                        ))}
+                    />
+                ))}
                 
             </div>
 
