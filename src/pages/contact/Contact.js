@@ -2,29 +2,43 @@ import './Contact.scss'
 import ContactCard from './contact-card/ContactCard.js'
 import ContactForm from './contact-form/ContactForm.js'
 import { MdOutlineEmail } from "react-icons/md";
+
+import {icons} from '../../components/icons.js'
+
+
+const GitHubIcon = icons.github
+const LinkedinIcon = icons.linkedin
+const PhoneIcon = icons.phone
+
 const Contact = () => {
 
     let contacts = [
         {
             title: 'EMAIL',
             address: 'franzcsng23@gmail.com',
+            link: 'mailto:franzcsng23@gmail.com',
             icon: MdOutlineEmail,
+        },
+        {
+            title: 'CONTACT NO.',
+            address: '+639285200815',
+            link: 'tel:+639285200815',
+            icon: PhoneIcon,
         },
         {
             title: 'GITHUB',
             address: 'Franzcsng',
-            icon: MdOutlineEmail,
+            link: 'https://github.com/Franzcsng',
+            icon: GitHubIcon,
         },
+        
         {
             title: 'LINKEDIN',
             address: 'Francis Causing',
-            icon: MdOutlineEmail,
-        },
-        {
-            title: 'LOCATION',
-            address: 'Bacolod City, Philippines',
-            icon: MdOutlineEmail,
-        },
+            link: 'https://linkedin.com/in/francis-causing-895463367',
+            icon: LinkedinIcon,
+        }
+        
     ]
 
     const displayContacts = (list) => {
@@ -33,6 +47,7 @@ const Contact = () => {
                     key='index'
                     icon={contact.icon}
                     title={contact.title}
+                    link={contact.link}
                     address={contact.address}
                 />  
             ))

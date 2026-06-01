@@ -1,6 +1,9 @@
 import './Footer.scss'
-import { SiGmail } from "react-icons/si";
-import { FaLinkedin, FaInstagram  } from "react-icons/fa";
+import { FaLinkedin} from "react-icons/fa";
+import {icons} from '../../icons.js'
+
+const GitIcon = icons.github
+
 
 const Footer = () => {
     return(
@@ -11,21 +14,21 @@ const Footer = () => {
                 <div className='footer-section'>
                     <h2>FNC.dev</h2>
                     <hr></hr>
-                    <p>Web design and development</p>
+                    <p>Web development</p>
                 </div>
                 
                 <div className='footer-section'>
                     <h2>Connect with me</h2>
-                    <p>franzcsng23@gmail.com</p>
-                    <p>+63 928 520 0815</p>
+                    <a href='mailto:franzcsng23@gmail.com' target="_blank" rel="noopener noreferrer">franzcsng23@gmail.com</a>
+                    <a href='tel:+639285200815' target="_blank" rel="noopener noreferrer">+63 928 520 0815</a>
                 </div>
 
                 <div className='footer-section'>
                     <h2>My Links</h2>
                     <div className='links'>
-                        <SiGmail className='icon'/>
-                        <FaLinkedin className='icon'/>
-                        <FaInstagram className='icon'/>
+                        <a href='https://linkedin.com/in/francis-causing-895463367' target="_blank" rel="noopener noreferrer"><FaLinkedin className='icon'/></a>
+                        <a href='https://github.com/Franzcsng' target="_blank" rel="noopener noreferrer"><GitIcon className='icon'/></a>
+                        
 
                     </div>
                 </div>

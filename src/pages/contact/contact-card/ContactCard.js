@@ -5,7 +5,8 @@ import TechIcon from '../../../components/common/tech-icon/TechIcon.js'
 
 const ContactCard = (props) => {
     return (
-        <div className='contact-card'>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+            <div className='contact-card'>
 
             <TechIcon
                 icon={props.icon}
@@ -24,6 +25,8 @@ const ContactCard = (props) => {
             </div>
             
         </div>
+        </a>
+        
     )
 }
 
