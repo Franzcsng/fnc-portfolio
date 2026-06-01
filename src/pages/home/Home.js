@@ -4,6 +4,8 @@ import SkillList from './SkillList.js'
 import Button from './../../components/common/button/Button.js'
 import ProjectsList from './projects/ProjectsList.js'
 import CtaSection from '../../components/common/cta-section/CtaSection.js'
+import aboutImage from '../../assets/images/speaking_francis.JPG'
+
 
 const Home = () =>{
     return (
@@ -59,7 +61,7 @@ const Home = () =>{
                     </div>
 
                     <div className='grid-child images'>
-                        <img alt='about-image' src='https://images.unsplash.com/photo-1755177510462-bf74c129428f'></img>
+                        <img alt='about-image' src={aboutImage}></img>
                     </div>
                     
 
