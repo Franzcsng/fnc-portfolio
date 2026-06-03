@@ -30,7 +30,7 @@ const Projects = () => {
                         slug={p.slug}
                         description={p.description}
                         repo={p.github}
-                        live={p.live || undefined}
+                        live={p.link || undefined}
                         techs={p.tech.map(t => (
                             {
                                 icon: t.icon, 

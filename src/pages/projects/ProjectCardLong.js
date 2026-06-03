@@ -26,7 +26,7 @@ const ProjectCardLong = ({image, title, description, slug,level, repo, live, tec
                 
                 <div className='button-container'>
                     {/* <Link to={`/projects/${slug}`} target="_blank" rel="noopener noreferrer">Learn more</Link> */}
-                    <a href={repo} target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>
+                  {repo &&  <a href={repo} target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>}
                    {
                     live && <a href={live} target="_blank" rel="noopener noreferrer"><IoLink className='icon'/></a>
                    } 
