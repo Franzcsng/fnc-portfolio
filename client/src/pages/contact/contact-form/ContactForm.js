@@ -106,7 +106,7 @@ const ContactForm = ({header = 'CONTACT ME', positionTop = 'none'}) => {
 
             </div>
 
-            <button className='submit-btn' disabled={isSubmitting}> SUBMIT </button>
+            <button className='submit-btn' disabled={isSubmitting}> {isSubmitting ? 'SENDING...' : 'SUBMIT'} </button>
             {emailStatus.message !== '' && (
                 <p>{emailStatus.message}</p>
             )}
