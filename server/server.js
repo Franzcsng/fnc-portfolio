@@ -11,7 +11,8 @@ const app = express();
 app.use(cors({
      origin: [
         'http://localhost:3000',
-        'https://fnc-portfolio.vercel.app'
+        'https://fnc-portfolio.vercel.app',
+        'https://fnc-portfolio.vercel.app/contact'
     ]
 }));
 
