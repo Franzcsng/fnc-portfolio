@@ -1,5 +1,5 @@
  export const sendEmail = async (emailData) => {
-    const API_URL = process.env.SERVER_URL
+    const API_URL = process.env.REACT_APP_SERVER_URL
     const response = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: {
