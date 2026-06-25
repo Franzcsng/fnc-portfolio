@@ -44,12 +44,11 @@ const Resume = () =>{
                 <div className='resume-container'>
                     <h2>PROFESSIONAL OVERVIEW</h2>
                     <p className='body'>
-                        Lead Developer with experience building and maintaining scalable web
-                        applications using modern technologies such as Next.js, Prisma ORM,
-                        and MySQL. Strong background in full-stack development, with
-                        additional experience in WordPress and e-commerce platforms. Proven
-                        ability to lead development efforts, optimize workflows, and deliver
-                        high-quality solutions in collaborative environments.
+                        Full-Stack Developer with experience designing and building business applications, workflow automation systems, and LLM-integrated
+                        software. Skilled in Next.js, React, Node.js, TypeScript, Prisma ORM, MySQL, and PostgreSQL. Hands-on experience with AI agent
+                        development using LangChain and LangGraph, prompt engineering, and no-code automation with n8n. Focused on building maintainable,
+                        scalable full-stack systems that solve real operational challenges.
+
                     </p>
 
                 </div>
@@ -65,21 +64,18 @@ const Resume = () =>{
                                 <p className='date'>October 2025 - Present</p>
 
                                 <ul>
-                                    <li>Lead the development of modern web applications using Next.js and Prisma ORM</li>
+                                    <li>Architected and built a centralized proposal management platform from the ground up using Next.js, Prisma ORM, and MySQL, replacing
+                                    manual proposal workflows, reducing turnaround time by ~40% through a centralized Next.js + MySQL platform.</li>
 
-                                    <li>Design and manage database structures using MySQL</li>
+                                    <li>Designed the system's database architecture, backend services, API layer, and application workflows to support proposal generation,
+                                    approvals, version control, and document management.
+                                    </li>
 
-                                    <li>Develop and maintain scalable and maintainable codebases</li>
+                                    <li>Developed production-ready full-stack features and optimized application performance, maintainability, and reliability</li>
 
-                                    <li>Collaborate with cross-functional teams to deliver production-ready features</li>
+                                    <li>Developed RESTful APIs and backend integrations enabling data synchronization between internal systems and third-party services.
+                                    </li>
 
-                                    <li>Optimize performance and improve application architecture</li>
-
-                                    <li>Contribute to technical decisions and development standards</li>
-
-                                    <li>Explore and prototype AI-driven automation workflows for a marketing agency initiative</li>
-
-                                    <li>Collaborate on the design of AI agent-based systems for marketing operations</li>
                                 </ul>
                              </div>
 
@@ -88,9 +84,13 @@ const Resume = () =>{
                                 <p className='date'>February 2025 - May 2025</p>
 
                                 <ul>
-                                    <li>Developed and maintained a responsive e-commerce platform using BigCommerce</li>
-                                    <li>Implemented cross-device compatibility and performance optimizations to enhance user experience</li>
-                                    <li>Collaborated with team members using GitHub workflows for version control and code management</li>
+                                    <li>Built and launched a responsive BigCommerce storefront with custom theme components and optimized page performance across mobile
+                                    and desktop devices.
+                                    e</li>
+                                    <li>Ensured cross-browser and cross-device compatibility through systematic testing and performance profiling.
+                                    </li>
+                                    <li>Collaborated with the development team using GitHub for version control, pull request reviews, and branch management.
+                                    </li>
                                 </ul>
                              </div>
                         </div>
@@ -99,22 +99,28 @@ const Resume = () =>{
                              <h2>TECHNICAL SKILLS</h2>
 
                              <ul>
-                                <li><span>Languages & Frameworks:</span> JavaScript, Next.js, React, Node.js, PHP
+                                <li><span>Languages & Frameworks:</span> JavaScript, TypeScript, Next.js, Node.Js, PHP, SQL
+
                                     
                                 </li>
 
-                                <li><span>Backend & Database:</span>  Prisma ORM, MySQL
-                                    
+                                <li><span>Backend & Database:</span>  Prisma ORM, MySQL, REST APIs, PostgreSQL
+                                  
                                 </li>
 
-                                <li><span>Frontend:</span>  SCSS, HTML, CSS
+                                <li><span>Frontend:</span> SCSS, HTML, CSS, Tailwind CSS, React
 
+
+                                </li>
+
+                                <li><span>AI & Automation:</span>  LLM Integration, OpenAPIs, N8N, Claude Code, LangChain, LangGraph
                                 </li>
 
                                 <li><span>CMS / Platforms:</span> WordPress, BigCommerce
                                 </li>
 
-                                <li><span>Tools:</span> Git, GitHub
+                                <li><span>Tools:</span>  Git, GitHub, Vercel, Railway, Supabase
+
                                 </li>
                              </ul>
                         </div>
