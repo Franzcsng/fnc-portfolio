@@ -14,6 +14,7 @@ const NextIcon = icons.nextjs
 const SassIcon = icons.sass
 const TypescriptIcon = icons.typescript
 const MysqlIcon = icons.mysql
+const DockerIcon = icons.docker
 
 
 const SkillList = () => {
@@ -80,6 +81,11 @@ const SkillList = () => {
              <TechIcon
                 icon={SassIcon}
                 label='SASS'
+                size={iconSize}
+            />
+            <TechIcon
+                icon={DockerIcon}
+                label='DOCKER'
                 size={iconSize}
             />
 

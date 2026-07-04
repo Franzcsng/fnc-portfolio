@@ -17,6 +17,7 @@ const MysqlIcon = icons.mysql
 const WordpressIcon = icons.wordpress
 const PrismaIcon = icons.prisma
 const HubspotIcon = icons.hubspot
+const DockerIcon = icons.docker
 
 
 export const projects = [
@@ -76,6 +77,7 @@ export const projects = [
              {tech:'SASS', icon: SassIcon},
              {tech: 'MYSQL', icon: MysqlIcon},
             {tech: 'PRISMA', icon: PrismaIcon},
+            {tech: 'DOCKER', icon: DockerIcon}
 
         ],
     },

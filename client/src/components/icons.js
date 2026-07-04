@@ -12,7 +12,8 @@ import {
 
 import { FaGithub,
         FaLinkedin ,
-        FaPhoneAlt 
+        FaPhoneAlt ,
+        FaDocker 
  } from "react-icons/fa";
 
  import { MdEmail } from "react-icons/md";
@@ -48,7 +49,8 @@ export const icons = {
   typescript: SiTypescript,
   prisma: SiPrisma,
   wordpress: IoLogoWordpress,
-  hubspot: SiHubspot
+  hubspot: SiHubspot,
+  docker: FaDocker 
   
 
 };
