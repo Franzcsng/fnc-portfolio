@@ -1,0 +1,22 @@
+.feature-card{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 1.5px solid var(--accent-color);
+    background: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease-in-out;
+
+    p{
+        margin: 0;
+        color: var(--text-color);
+        font-size: clamp(14px, 1.3vw, 16px);
+        line-height: 1.5;
+    }
+
+    &:hover{
+        box-shadow: 0 0 8px var(--accent-color);
+    }
+}

@@ -1,0 +1,94 @@
+.screenshot-modal{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 40px;
+    box-sizing: border-box;
+
+    .modal-image{
+        max-width: 90%;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1.5px solid var(--accent-color);
+        border-radius: 50%;
+        color: #EEEEEE;
+        font-size: 22px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            background-color: var(--accent-color);
+            color: var(--background-color);
+        }
+    }
+
+    .nav-btn{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1.5px solid var(--accent-color);
+        border-radius: 50%;
+        color: #EEEEEE;
+        font-size: 24px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &.prev{ left: 20px; }
+        &.next{ right: 20px; }
+
+        &:hover{
+            background-color: var(--accent-color);
+            color: var(--background-color);
+        }
+    }
+
+    .counter{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #EEEEEE;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    @media screen and (max-width: 600px){
+        padding: 15px;
+
+        .nav-btn{
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+}
