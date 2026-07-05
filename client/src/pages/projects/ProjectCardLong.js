@@ -2,7 +2,7 @@ import './ProjectCardLong.scss'
 import ProjectTechIcon from './ProjectTechIcon.js'
 import { FaGithubAlt } from "react-icons/fa6";
 import { IoLink } from "react-icons/io5";
-// import {Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -25,7 +25,7 @@ const ProjectCardLong = ({image, title, description, slug,level, repo, live, tec
                 </div>
                 
                 <div className='button-container'>
-                    {/* <Link to={`/projects/${slug}`} target="_blank" rel="noopener noreferrer">Learn more</Link> */}
+                    <NavLink to={`/projects/${slug}`}>Read More</NavLink>
                   {repo &&  <a href={repo} target="_blank" rel="noopener noreferrer"><FaGithubAlt className='icon'/></a>}
                    {
                     live && <a href={live} target="_blank" rel="noopener noreferrer"><IoLink className='icon'/></a>
@@ -41,7 +41,8 @@ const ProjectCardLong = ({image, title, description, slug,level, repo, live, tec
                 <div className='tech-container'>
                     {techs.map((tech, index) => {
                         return(
-                            <ProjectTechIcon 
+                            <ProjectTechIcon
+                                key={index}
                                 icon={tech.icon}
                                 size={iconSize}
                                 label={tech.label}

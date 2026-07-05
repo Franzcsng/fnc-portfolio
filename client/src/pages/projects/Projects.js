@@ -25,6 +25,7 @@ const Projects = () => {
 
                 {projects.map(p => (
                     <ProjectCardLong
+                        key={p.slug}
                         image={p.featured_image}
                         title={p.title}
                         slug={p.slug}

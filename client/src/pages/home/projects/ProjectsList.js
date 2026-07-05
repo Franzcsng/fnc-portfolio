@@ -10,9 +10,11 @@ const ProjectsList = () => {
 
             {featuredProjects.map(p => (
                 <ProjectCard
+                    key={p.slug}
                     img={p.featured_image}
                     title={p.title}
                     desc={p.description}
+                    slug={p.slug}
                 />
             ))}
 
