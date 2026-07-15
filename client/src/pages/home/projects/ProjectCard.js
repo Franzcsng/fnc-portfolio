@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const ProjectCard = ({img, title, level, desc, slug}) => {
     return(
         <div className='project-card'>
-            <img alt='Project Preview' src={img}></img>
+            <img alt='Project Preview' src={img} loading='lazy'></img>
 
             <div className='card-body'>
                 <p className='project-title'>{title}</p>

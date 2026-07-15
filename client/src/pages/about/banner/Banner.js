@@ -2,7 +2,7 @@ import './Banner.scss'
 import GridTiles from '../../../components/common/grid-tiles/GridTiles.js'
 import { NavLink } from 'react-router-dom'
 import { icons } from "../../../components/icons.js";
-import displayImage from '../../../assets/images/siomai_francis.png'
+import displayImage from '../../../assets/images/siomai_francis.webp'
 const GithubIcon = icons.github
 const LinkedinIcon = icons.linkedin
 

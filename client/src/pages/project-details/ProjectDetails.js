@@ -142,6 +142,7 @@ const ProjectDetails = () => {
                             key={index}
                             alt={`${project.title} screenshot ${index + 1}`}
                             src={src}
+                            loading='lazy'
                             onClick={() => setActiveIndex(index)}
                         ></img>
                     ))}

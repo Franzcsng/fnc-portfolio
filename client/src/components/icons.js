@@ -26,6 +26,7 @@ import { RiSupabaseFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiHubspot } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 export const icons = {
   html: FaHtml5,
   css: FaCss3Alt,
@@ -50,7 +51,7 @@ export const icons = {
   prisma: SiPrisma,
   wordpress: IoLogoWordpress,
   hubspot: SiHubspot,
-  docker: FaDocker 
-  
+  docker: FaDocker,
+  postgres: SiPostgresql
 
 };

@@ -1,9 +1,9 @@
 import {icons} from '../../components/icons'
 
 import cssystemImage from '../images/projects/cs-system.png'
-import ironbornImage from '../images/projects/ironborn.png'
-import truckmovesImage from '../images/projects/truckmoves.png'
-import windmillImage from '../images/projects/windmilldowns.png'
+import ironbornImage from '../images/projects/ironborn.webp'
+import truckmovesImage from '../images/projects/truckmoves.webp'
+import windmillImage from '../images/projects/windmilldowns.webp'
 import proposalImage from '../images/projects/system-proposal.png'
 
 import expenseTrackerFeatured from '../images/projects/expense-tracker/featured-image.png'
@@ -12,6 +12,16 @@ import expenseTrackerShot2 from '../images/projects/expense-tracker/Screenshot 2
 import expenseTrackerShot3 from '../images/projects/expense-tracker/Screenshot 2026-07-05 203529.png'
 import expenseTrackerShot4 from '../images/projects/expense-tracker/Screenshot 2026-07-05 203902.png'
 import expenseTrackerShot5 from '../images/projects/expense-tracker/Screenshot 2026-07-05 204427.png'
+
+import hotelConciergeFeatured from '../images/projects/hotel-concierge-ai-assistant/preview-image.webp'
+import hotelConciergeChatbotWorkflow from '../images/projects/hotel-concierge-ai-assistant/Chatbot Workflow.webp'
+import hotelConciergeContactWorkflow from '../images/projects/hotel-concierge-ai-assistant/Contact Request and Email Workflow.webp'
+import hotelConciergePdfWorkflow from '../images/projects/hotel-concierge-ai-assistant/PDF Processing Workflow.webp'
+import hotelConciergeShot1 from '../images/projects/hotel-concierge-ai-assistant/Screenshot 2026-07-08 214649.webp'
+import hotelConciergeShot2 from '../images/projects/hotel-concierge-ai-assistant/Screenshot 2026-07-08 214807.webp'
+import hotelConciergeShot3 from '../images/projects/hotel-concierge-ai-assistant/Screenshot 2026-07-08 214848.webp'
+import hotelConciergeShot4 from '../images/projects/hotel-concierge-ai-assistant/Screenshot 2026-07-08 215201.webp'
+import hotelConciergeShot5 from '../images/projects/hotel-concierge-ai-assistant/Screenshot 2026-07-08 215207.webp'
 
 
 const NextIcon = icons.nextjs
@@ -25,9 +35,61 @@ const WordpressIcon = icons.wordpress
 const PrismaIcon = icons.prisma
 const HubspotIcon = icons.hubspot
 const DockerIcon = icons.docker
+const PostgresIcon = icons.postgres
 
 
 export const projects = [
+    {
+        title: 'Hotel AI Concierge Chatbot',
+        featured_image: hotelConciergeFeatured,
+        slug: 'hotel-concierge-rag-chatbot',
+        description: "An AI-powered hotel concierge chatbot that answers guest questions using retrieval-augmented generation, with automated escalation for unanswered queries.",
+
+        overview: "Designed and built an AI concierge system for a hotel brand, capable of answering guest questions grounded in the hotel's own documentation. The system combines a document ingestion pipeline, a RAG-based chatbot, and an automated escalation workflow, all orchestrated through n8n and backed by Supabase with vector search for semantic retrieval.",
+
+        problem: "Guests often have questions that require digging through PDFs, hotel policies, or contacting staff directly, creating friction for simple queries and adding avoidable workload to front-desk and support staff, especially for questions outside normal business hours.",
+
+        solution: "Built a RAG-based chatbot that answers guest questions directly from ingested hotel documents, with graceful fallback handling for unrelated or unanswerable questions. When the chatbot can't confidently answer, it automatically collects guest contact details through a follow-up form and routes the request to hotel staff with full conversation context.",
+
+        challenges: "Designing a chunking and embedding strategy that preserved enough context for accurate retrieval, tuning the RAG pipeline to reliably distinguish answerable from unanswerable questions, and structuring the escalation workflow to hand off complete, useful context to a human agent without requiring the guest to repeat themselves.",
+
+        problemsSolved: [
+            "Automated first-line guest support by answering common hotel questions instantly using document-grounded AI responses instead of manual lookup.",
+            "Reduced staff workload by filtering out repetitive questions, only escalating genuinely unanswerable or out-of-scope requests to a human.",
+            "Eliminated context loss during escalation by automatically compiling contact details, the unanswered question, a conversation summary, and the full transcript into a single notification email.",
+            "Automated document ingestion so hotel staff can upload a PDF and have it chunked, embedded, and made searchable without any manual data entry.",
+            "Built a scalable retrieval architecture using pgvector, allowing new hotel documents to be added without retraining or redeploying the system."
+        ],
+
+        reflection: "This project deepened my understanding of building production-grade RAG systems beyond simple prompt-and-response chatbots. I learned how to design a document processing pipeline from raw PDF to searchable vector embeddings, how to structure prompts and fallback logic so an AI system knows the boundaries of what it can confidently answer, and how to design automation workflows that hand off gracefully to humans instead of leaving users stuck. It sharpened my thinking around orchestrating multiple interconnected workflows as a single coherent system rather than isolated automations.",
+
+        screenshots: [
+            hotelConciergeChatbotWorkflow,
+            hotelConciergeContactWorkflow,
+            hotelConciergePdfWorkflow,
+            hotelConciergeShot1,
+            hotelConciergeShot2,
+            hotelConciergeShot3,
+            hotelConciergeShot4,
+            hotelConciergeShot5
+        ],
+
+        features: [
+            'RAG-based question answering grounded in hotel documentation',
+            'Fallback handling for unrelated or unanswerable questions',
+            'Automated contact form escalation with full conversation context',
+            'Automated PDF ingestion, chunking, and embedding pipeline',
+            'Admin email notifications with contact details, summary, and full transcript',
+        ],
+
+        tech: [
+            {tech: 'N8N', icon: N8nIcon},
+            {tech: 'SUPABASE', icon: SupabaseIcon},
+            {tech: 'POSTGRESQL', icon: PostgresIcon},
+            {tech: 'OPENAI', icon: OpenaiIcon},
+            {tech: 'JAVASCRIPT', icon: JSIcon},
+        ],
+    },
     {
     title: 'AI Expense Tracker',
     featured_image: expenseTrackerFeatured,
@@ -174,7 +236,7 @@ export const projects = [
         title: 'Truckmoves Australia Business Website',
         featured_image: truckmovesImage,
         slug: 'truckmoves',
-       description: "A custom proposal management platform built to modernize and replace a legacy WordPress-based system used for generating and managing client proposals.",
+       description: "A corporate website developed for a trucking company.",
 
         overview: "",
 
