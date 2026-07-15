@@ -13,6 +13,10 @@ import expenseTrackerShot3 from '../images/projects/expense-tracker/Screenshot 2
 import expenseTrackerShot4 from '../images/projects/expense-tracker/Screenshot 2026-07-05 203902.png'
 import expenseTrackerShot5 from '../images/projects/expense-tracker/Screenshot 2026-07-05 204427.png'
 
+import proposalSystemShot1 from '../images/projects/proposal-system/Screenshot 2026-07-15 142603.webp'
+import proposalSystemShot2 from '../images/projects/proposal-system/Screenshot 2026-07-15 142616.webp'
+import proposalSystemShot3 from '../images/projects/proposal-system/Screenshot 2026-07-15 142631.webp'
+
 import hotelConciergeFeatured from '../images/projects/hotel-concierge-ai-assistant/preview-image.webp'
 import hotelConciergeChatbotWorkflow from '../images/projects/hotel-concierge-ai-assistant/Chatbot Workflow.webp'
 import hotelConciergeContactWorkflow from '../images/projects/hotel-concierge-ai-assistant/Contact Request and Email Workflow.webp'
@@ -172,7 +176,11 @@ export const projects = [
 
         reflection: "This project marked a major milestone in my growth as a software engineer. It was the first time I owned the complete lifecycle of a production application—from requirements gathering and database design to development, deployment, and server configuration. Beyond building features, I learned how to architect software around business workflows, containerize applications with Docker, deploy to a Linux VPS using reverse proxies and SSL, and make technical decisions with long-term maintainability and scalability in mind. It shifted my mindset from simply writing code to designing complete software solutions.",
 
-        screenshots: [],
+        screenshots: [
+            proposalSystemShot1,
+            proposalSystemShot2,
+            proposalSystemShot3
+        ],
 
         features: [
 
